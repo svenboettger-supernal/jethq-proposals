@@ -1656,7 +1656,7 @@ html.locked .proposal-gate {
 
 /* Header row with quarter labels */
 .gantt-row--months {
-  grid-template-columns: 240px repeat(13, 1fr);
+  grid-template-columns: 240px repeat(6, 1fr);
   background: var(--bg-muted);
   border-bottom: 1px solid var(--border);
 }
@@ -1703,7 +1703,7 @@ html.locked .proposal-gate {
   left: 0;
   height: 100%;
   width: 100%;
-  grid-template-columns: 240px repeat(13, 1fr);
+  grid-template-columns: 240px repeat(6, 1fr);
   pointer-events: none;
   background: transparent;
   z-index: 0;
@@ -1784,7 +1784,7 @@ html.locked .proposal-gate {
 .gantt-row-bars {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(13, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   align-items: center;
   margin: 0;
   padding: 0;
