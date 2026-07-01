@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Supernal · JetHQ Flight Deck</title>
+<meta name="description" content="Scope of work and timeline for JetHQ Flight Deck, the single operating system that brings the Hub, the intranet, delivery tracking, and the CRM into one place.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="Supernal"><img src="assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Proposal for JetHQ</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="kicker">Our partnership</p>
+    <h1>JetHQ Flight Deck</h1>
+    <p class="lede">One operating system for the whole team. Flight Deck is the place everyone opens first: a role-based home screen, the modernized intranet, delivery tracking, and the CRM, all wired to the Hub so the team stops toggling between platforms and works from a single source of truth.</p>
+  </section>
+</div>
+
+<div class="container">
+
+  <section class="client-block exec-summary">
+    <div class="client-block-header">
+      <h2>Executive Summary</h2>
+      <p>Today the JetHQ team moves between the Hub, the SharePoint intranet, Salesforce, Monday, and shared drives to get through a day. Every jump is friction, and every platform is one more place to check. Flight Deck removes the toggling. It is a single web and mobile operating system where each person lands on a home screen built for their role, reaches every tool and document from one place, and drops into the Hub for a listing without leaving the surface. The Hub stays the source of truth for aircraft and keeps its name; Flight Deck surfaces it, links to it, and adds the intranet, delivery tracking, and CRM around it. The build is phased so the low-effort, high-value pieces ship first and the heavier CRM work follows once the foundation is live.</p>
+    </div>
+
+    <div class="exec-summary-grid">
+
+      <div class="exec-summary-card">
+        <p class="kicker">Home</p>
+        <p class="exec-summary-body">A role-based heads-up display. Each person lands on the KPIs, shortcuts, and widgets that match how they work, customizable per user.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 0 &middot; Q3 2026</span>
+        </p>
+      </div>
+
+      <div class="exec-summary-card">
+        <p class="kicker">Intranet</p>
+        <p class="exec-summary-body">The SharePoint intranet rebuilt inside Flight Deck: links and tools, the marketing and brand asset library, and HR reference material.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 0 &middot; Q3 2026</span>
+        </p>
+      </div>
+
+      <div class="exec-summary-card">
+        <p class="kicker">Aircraft</p>
+        <p class="exec-summary-body">Deep links into the Hub for every listing, with aircraft files consolidated onto each aircraft record so the whole story lives in one place.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 1 &middot; Q4 2026</span>
+        </p>
+      </div>
+
+      <div class="exec-summary-card">
+        <p class="kicker">Project OS</p>
+        <p class="exec-summary-body">JetHQ's version of Project OS. Valuation and FMV requests tracked, sales-engineer workload visible, and a pulse on activity by region.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 1 &middot; Q4 2026</span>
+        </p>
+      </div>
+
+      <div class="exec-summary-card">
+        <p class="kicker">CRM</p>
+        <p class="exec-summary-body">JetHQ's own CRM, built to retire Salesforce over time. Emails captured, deals in one pipeline, every aircraft linked to its client.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 2 &middot; Q1 2027</span>
+        </p>
+      </div>
+
+      <div class="exec-summary-card">
+        <p class="kicker">Assistant</p>
+        <p class="exec-summary-body">An in-platform AI helper for translation, drafting, and cleanup, with an optional private-model path for sensitive legal work.</p>
+        <p class="exec-summary-meta">
+          <span class="when">Phase 2 &middot; optional</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="client-block">
+    <div class="client-block-header">
+      <p class="section-label">The operating system</p>
+      <div>
+        <h2>Three surfaces the team lives in</h2>
+        <p>Flight Deck opens on a home screen, holds the intranet the team references all day, and links straight into the Hub. These three ship first because they carry the most people and the least build risk. The Hub keeps its name and its job; Flight Deck wraps around it.</p>
+      </div>
+    </div>
+
+    <div class="index-list">
+
+      <a class="index-card" href="flight-deck-home/">
+        <p class="kicker">Home</p>
+        <h2>Flight Deck Home</h2>
+        <p>A role-based heads-up display. Active listings, deals against goal, Hub quick access, calendar, and live activity, arranged per person with customizable pin shortcuts. The KPIs a broker sees differ from what leadership sees. Web and mobile from day one.</p>
+      </a>
+
+      <a class="index-card" href="intranet-migration/">
+        <p class="kicker">Intranet</p>
+        <h2>Knowledge &amp; Intranet</h2>
+        <p>The current SharePoint intranet rebuilt and modernized inside Flight Deck: JetHQ links, industry tools, and listing platforms; the searchable marketing and brand asset library with Canva links; and HR reference material. Sensitive HR and compensation files stay on OneDrive with leadership.</p>
+      </a>
+
+      <a class="index-card" href="hub-aircraft-files/">
+        <p class="kicker">Aircraft</p>
+        <h2>Hub &amp; Aircraft Files</h2>
+        <p>Flight Deck surfaces every listing and deep-links to the aircraft page in the Hub. Aircraft files, FMV, maintenance records, marketing, photos, specs, and the pitch deck, are consolidated onto each aircraft so brokers pull the full story from one place. New-listing routing keeps the Hub as the source.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="client-block">
+    <div class="client-block-header">
+      <p class="section-label">Running the business</p>
+      <div>
+        <h2>Delivery and deals in one place</h2>
+        <p>Once the foundation is live, Flight Deck takes on how work is requested and tracked and how deals are managed. Project OS lands first as a natural extension of what the team already does in Monday. The CRM is the larger effort and follows, built to earn the team off Salesforce over time.</p>
+      </div>
+    </div>
+
+    <div class="index-list">
+
+      <a class="index-card" href="project-os/">
+        <p class="kicker">Project OS</p>
+        <h2>Delivery Tracking</h2>
+        <p>JetHQ's version of Project OS. Valuation and FMV requests logged and counted, sales-engineer workload visible at a glance, and a live pulse on who is active in which region. Replaces the manual counting the team does in Monday today, with room to grow into full project tracking.</p>
+      </a>
+
+      <a class="index-card" href="crm/">
+        <p class="kicker">CRM</p>
+        <h2>CRM</h2>
+        <p>JetHQ's own CRM and the long-term replacement for Salesforce. Every deal in one pipeline, emails captured automatically, and each aircraft linked to its client so a name in the Hub opens the client record. Built to remove the manual Salesforce effort and the stack of add-on subscriptions.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="client-block">
+    <div class="client-block-header">
+      <p class="section-label">On the platform</p>
+      <div>
+        <h2>An assistant, when it earns its place</h2>
+        <p>An optional in-platform helper for the everyday language work the team does, kept separate from the core build so it never blocks it.</p>
+      </div>
+    </div>
+
+    <div class="index-list">
+
+      <a class="index-card" href="ai-helper/">
+        <p class="kicker">Assistant</p>
+        <h2>AI Helper</h2>
+        <p>A simple in-platform assistant for translation, grammar, and drafting, so the team stops leaving Flight Deck for ChatGPT. An optional private-model path keeps sensitive legal work local and can replace a per-matter legal tool like GCAI. Scoped and sized only if JetHQ wants it.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <div class="timeline-section-header">
+      <p class="section-label">Timeline</p>
+      <div>
+        <h2>Flight Deck across three phases</h2>
+        <p>Each row maps a workstream to its build window. Phase 0 stands up the surface and the pieces that carry the most people. Phase 1 consolidates aircraft files and adds delivery tracking. Phase 2 takes on the CRM and the optional assistant. All timings are estimates and shift with kickoff, engineering sizing, and approval cadence.</p>
+      </div>
+    </div>
+
+    <div class="gantt-wrap">
+      <div class="gantt">
+
+        <div class="gantt-row gantt-row--months">
+          <div class="gantt-row-first"></div>
+          <span class="quarter">Q3 26</span>
+          <span class="quarter">Q4 26</span>
+          <span class="quarter">Q1 27</span>
+          <span class="quarter">Q2 27</span>
+          <span class="future" aria-label="Future">+</span>
+        </div>
+
+        <div class="gantt-row gantt-row--lines" aria-hidden="true">
+          <div class="gantt-row-first"></div>
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="gantt-today" id="gantt-today" aria-hidden="true">
+          <span class="gantt-today-pill">Jul 2026</span>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="flight-deck-home/">Flight Deck Home</a></h3>
+            <p class="meta">Around Aug to Oct 2026</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 3 / 6;" title="Around Aug to Oct 2026"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="intranet-migration/">Knowledge &amp; Intranet</a></h3>
+            <p class="meta">Around Aug to Nov 2026</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 3 / 7;" title="Around Aug to Nov 2026"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="hub-aircraft-files/">Hub &amp; Aircraft Files</a></h3>
+            <p class="meta">Around Sep to Dec 2026</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 4 / 8;" title="Around Sep to Dec 2026"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="project-os/">Delivery Tracking</a></h3>
+            <p class="meta">Around Nov 2026 to Jan 2027</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 6 / 9;" title="Around Nov 2026 to Jan 2027"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="crm/">CRM</a></h3>
+            <p class="meta">Around Jan to Apr 2027</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 8 / 12;" title="Around Jan to Apr 2027"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3><a href="ai-helper/">AI Helper</a></h3>
+            <p class="meta">Around Mar to May 2027 &middot; optional</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 10 / 13;" title="Around Mar to May 2027"></li>
+          </ul>
+        </div>
+
+        <div class="gantt-row">
+          <div class="gantt-row-first">
+            <h3>Migration &amp; Training</h3>
+            <p class="meta">Around Aug 2026 &middot; ongoing</p>
+          </div>
+          <ul class="gantt-row-bars">
+            <li style="grid-column: 3 / 15;" title="Around Aug 2026 onward"></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="pricing-section-header">
+      <p class="section-label">Sizing</p>
+      <div>
+        <h2>Effort and engagement</h2>
+        <p>Flight Deck is built inside the JetHQ monthly point-based plan. The estimates below are directional, sized on the same scale Supernal uses across the JetHQ roadmap (small is 1 point, medium is 2, large is 4). Final sizing is confirmed in the internal engineering review with Jens and Mauro before it is locked. Points, not a fixed one-time price, keep the plan flexible as JetHQ chooses what to pull forward.</p>
+      </div>
+    </div>
+
+    <div class="pricing-table-wrap">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Workstream</th>
+            <th>Phase</th>
+            <th class="pt-price">Estimated size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="pt-item-name">Flight Deck Home</div></td>
+            <td class="pt-type">Phase 0 &middot; role-based heads-up display, web and mobile shell</td>
+            <td class="pt-price">Large</td>
+          </tr>
+          <tr>
+            <td><div class="pt-item-name">Knowledge &amp; Intranet</div></td>
+            <td class="pt-type">Phase 0 &middot; intranet rebuild, asset library, HR reference</td>
+            <td class="pt-price">Medium</td>
+          </tr>
+          <tr>
+            <td><div class="pt-item-name">Hub &amp; Aircraft Files</div></td>
+            <td class="pt-type">Phase 1 &middot; deep links, file consolidation, listing routing</td>
+            <td class="pt-price">Large</td>
+          </tr>
+          <tr>
+            <td><div class="pt-item-name">Delivery Tracking</div></td>
+            <td class="pt-type">Phase 1 &middot; Project OS for requests and workload</td>
+            <td class="pt-price">Medium</td>
+          </tr>
+          <tr>
+            <td><div class="pt-item-name">CRM</div></td>
+            <td class="pt-type">Phase 2 &middot; pipeline, email capture, Salesforce replacement</td>
+            <td class="pt-price">Large</td>
+          </tr>
+          <tr>
+            <td><div class="pt-item-name">AI Helper</div></td>
+            <td class="pt-type">Phase 2 &middot; optional, sized only if JetHQ wants it</td>
+            <td class="pt-price">Medium</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="client-block">
+    <div class="client-block-header">
+      <p class="section-label">Decisions to confirm</p>
+      <div>
+        <h2>What we lock in together</h2>
+        <p>A short list of choices that shape sizing and sequencing. Confirming these lets the internal engineering review size Flight Deck with confidence.</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Decision</th><th>Owner</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-item">Confirm Salesforce is retired over time rather than kept as the deal database. This is the biggest single driver of CRM scope.</td><td class="col-meta">JetHQ leadership</td></tr>
+          <tr><td class="col-item">Name a Flight Deck operator per surface: who administers listings, uploads files, and manages the intranet day to day.</td><td class="col-meta">JetHQ</td></tr>
+          <tr><td class="col-item">Confirm aircraft files move fully into the Hub rather than staying on SharePoint with links. Sets the migration effort.</td><td class="col-meta">JetHQ</td></tr>
+          <tr><td class="col-item">Decide whether the AI Helper and the private-model legal path are in or out of the first year.</td><td class="col-meta">Together</td></tr>
+          <tr><td class="col-item">Grant Supernal access to the current intranet so every domain is mapped before build. Summer intern paired for the data migration.</td><td class="col-meta">JetHQ</td></tr>
+          <tr><td class="col-item">Lock Phase 0 scope so the first surfaces ship fast, then revisit sequencing at the standing Wednesday call.</td><td class="col-meta">Together</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="client-block">
+    <div class="client-block-header">
+      <p class="section-label">Reference</p>
+      <div>
+        <h2>Where this comes from</h2>
+        <p>The scope above is drawn from the Flight Deck scoping call and the working prototype. Both are linked here for context.</p>
+      </div>
+    </div>
+
+    <div class="index-list">
+
+      <a class="index-card" href="https://jethq-os-prototype.up.railway.app/" target="_blank" rel="noopener">
+        <p class="kicker">Prototype</p>
+        <h2>Flight Deck prototype</h2>
+        <p>The current working prototype that frames the vision for the operating system. Opens in a new tab.</p>
+      </a>
+
+      <a class="index-card" href="https://drive.google.com/file/d/1NVkei5fmnJVJHVJO8miNfvP4D7uFe8TM/view" target="_blank" rel="noopener">
+        <p class="kicker">Recording</p>
+        <h2>Scoping call, Jun 26</h2>
+        <p>The technical scoping session that shaped this plan. Opens in a new tab.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var todayEl = document.getElementById('gantt-today');
+  if (!todayEl) return;
+  var today = new Date();
+  var startYear = 2026, startMonth = 6; // July 2026 (0-indexed)
+  var totalCells = 13; // 12 months + future cell
+  var monthsFromStart = (today.getFullYear() - startYear) * 12 + (today.getMonth() - startMonth);
+  var daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+  var monthFraction = monthsFromStart + (today.getDate() - 1) / daysInMonth;
+  if (monthFraction < 0 || monthFraction >= totalCells) { todayEl.style.display = 'none'; return; }
+  var fraction = monthFraction / totalCells;
+  todayEl.style.left = 'calc(240px + (100% - 240px) * ' + fraction.toFixed(4) + ')';
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var pill = todayEl.querySelector('.gantt-today-pill');
+  if (pill) pill.textContent = months[today.getMonth()] + ' ' + today.getFullYear();
+})();
+</script>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>

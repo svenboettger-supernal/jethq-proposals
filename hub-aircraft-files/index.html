@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JetHQ · Hub &amp; Aircraft Files · Supernal SOW</title>
+<meta name="description" content="Flight Deck surfaces every listing and deep-links to the Hub, with aircraft files consolidated onto each aircraft record.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Supernal"><img src="../assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Statement of Work for JetHQ</span>
+    </div>
+  </header>
+
+  <a class="back-link" href="../"><span class="arrow">&larr;</span> All proposals</a>
+
+  <div class="hero-grid">
+    <section class="hero">
+      <p class="kicker">Aircraft</p>
+      <h1>Hub &amp; Aircraft Files</h1>
+      <p class="lede">The Hub stays the source of truth for aircraft and keeps its name. Flight Deck surfaces every listing and deep-links straight to the aircraft page in the Hub, and the aircraft files are consolidated onto each aircraft so the whole story lives in one place.</p>
+    </section>
+
+    <aside class="jd-aside">
+      <button class="jd-button" type="button" data-jd-open="jd-modal">
+        <span class="jd-button-title">What you get</span>
+        <span class="jd-button-foot">
+          <span>Four outcomes you can expect</span>
+          <span class="jd-button-arrow">&rarr;</span>
+        </span>
+      </button>
+    </aside>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">01 / Overview</p>
+      <div class="section-body">
+        <h2>The brief</h2>
+        <p>Aircraft files today are scattered across shared drives, one folder per aircraft, holding the fair market value, maintenance records, marketing and the exclusive marketing agreement, photos, videos, specifications, and the pitch deck. Brokers hunt across folders to pull a file for a client, and the story of an aircraft is spread across places nobody wants to open twice.</p>
+        <p>Flight Deck surfaces the Hub listings by state and links to the aircraft page in the Hub, where the notes and market updates already live. The files move onto the aircraft record so a broker opens one page and has everything. The Hub remains the source of truth: new aircraft still enter the Hub, and Flight Deck reflects them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">02 / Objectives</p>
+      <div class="section-body">
+        <h2>What success looks like</h2>
+        <ul>
+          <li>Every listing surfaced in Flight Deck with a deep link to its aircraft page in the Hub.</li>
+          <li>Every listing state represented: active with agreements, acquisitions, off-market, coming soon, offers, pending, sold, and non-JetHQ history.</li>
+          <li>Aircraft files consolidated onto the aircraft record: fair market value, maintenance records, marketing and the marketing agreement, photos, videos, specifications, and the pitch deck.</li>
+          <li>A broker opens any file for a client from one place, with no hunting across folders.</li>
+          <li>New-listing routing so an aircraft entering the Hub also appears in Flight Deck automatically.</li>
+          <li>Status toggles such as mark as coming soon or mark as a new listing, controlled by the operator.</li>
+          <li>Mobile access so brokers pull files with a client in the room.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">03 / Scope</p>
+      <div class="section-body">
+        <h2>Scope of work</h2>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 1 &middot; Around Sep to Oct 2026</p>
+          <h3>Surface listings and deep-link to the Hub</h3>
+          <p class="phase-job">Every listing shows up in Flight Deck by state and opens straight to its aircraft page in the Hub.</p>
+          <ul>
+            <li>Read the Hub listings and surface them in Flight Deck grouped by state.</li>
+            <li>Represent each listing state: active with agreements, acquisitions, off-market, coming soon, offers, pending, and sold.</li>
+            <li>Deep-link each listing to its aircraft page in the Hub, where notes and market updates already live.</li>
+            <li>Confirm the Hub stays the source of truth and Flight Deck reflects what the Hub holds.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 2 &middot; Around Oct to Nov 2026</p>
+          <h3>Consolidate aircraft files onto the record</h3>
+          <p class="phase-job">Every file for an aircraft lives on that aircraft, so a broker opens one page and has the whole story.</p>
+          <ul>
+            <li>Consolidate fair market value, maintenance records, marketing and the marketing agreement, photos, videos, specifications, and the pitch deck onto each aircraft record.</li>
+            <li>Migrate the current shared-drive folders per the chosen approach: files moved fully in, or linked in place.</li>
+            <li>Retain non-JetHQ listing history for reference alongside the JetHQ record.</li>
+            <li>Let a broker open any file for a client from the aircraft page.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 3 &middot; Around Nov to Dec 2026</p>
+          <h3>Routing, toggles, and mobile access</h3>
+          <p class="phase-job">New aircraft flow in automatically, the operator controls status, and brokers reach files from their phone.</p>
+          <ul>
+            <li>New-listing routing so an aircraft entering the Hub also appears in Flight Deck without manual entry.</li>
+            <li>Status toggles such as mark as coming soon or mark as a new listing.</li>
+            <li>Mobile access to files so brokers pull the fair market value or a video with a client in the room.</li>
+            <li>Operator handover so listings and files are administered day to day inside JetHQ.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">04 / Out of scope</p>
+      <div class="section-body">
+        <h2>Out of scope</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-item">Pitch deck creation stays a manual, human task; Flight Deck stores and surfaces the deck, it does not produce it.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">JetNet and QuickBooks integrations are noted as future work, not this phase.</td><td class="col-meta">Future work</td></tr>
+              <tr><td class="col-item">Replacing the Hub itself; Flight Deck surfaces and links to it and the Hub stays the source of truth.</td><td class="col-meta">Not in scope</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">05 / Timeline</p>
+      <div class="section-body">
+        <h2>Hub &amp; Aircraft Files across three stages</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Around Sep to Oct 2026</td><td>Listings surfaced in Flight Deck by state, each deep-linked to its aircraft page in the Hub.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Around Oct to Nov 2026</td><td>Aircraft files consolidated onto each record, with non-JetHQ history retained for reference.</td></tr>
+              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Around Nov to Dec 2026</td><td>New-listing routing, status toggles, and mobile access to files.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">06 / Required inputs</p>
+      <div class="section-body">
+        <h2>What JetHQ provides</h2>
+        <p>These inputs let the build start clean and set the migration effort. Supernal reviews progress and open decisions with JetHQ at the standing Wednesday call.</p>
+        <ul>
+          <li>Hub access and its data model, so listings and aircraft pages can be surfaced and deep-linked.</li>
+          <li>Access to the current shared-drive file structure and the aircraft folder taxonomy.</li>
+          <li>A decision on whether files move fully into the Hub or stay linked; this sets the migration effort.</li>
+          <li>A named operator who administers listings and uploads files day to day.</li>
+          <li>The summer intern paired with Supernal for the file migration.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">Sizing</p>
+      <div class="section-body">
+        <h2>Effort</h2>
+        <div class="pricing-card">
+          <p class="pricing-amount">Large <span class="pricing-amount-meta">/ Phase 1</span></p>
+        </div>
+        <p>Sized on the JetHQ roadmap scale (small is 1 point, medium is 2, large is 4) and built inside the monthly point-based plan. Final sizing is confirmed in the internal engineering review before it is locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<div class="jd-modal" id="jd-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jd-modal-title">
+  <div class="jd-modal-backdrop" data-jd-close></div>
+  <div class="jd-modal-content">
+    <button class="jd-modal-close" type="button" aria-label="Close" data-jd-close>&times;</button>
+    <h2 id="jd-modal-title">Hub &amp; Aircraft Files &middot; What you get</h2>
+    <p class="jd-modal-subtitle">Four outcomes from Hub &amp; Aircraft Files.</p>
+    <ol class="jd-modal-list">
+      <li>
+        <span class="action">Open a listing in Flight Deck and jump straight to its Hub page in one click.</span>
+        <span class="when">Available around September 2026</span>
+      </li>
+      <li>
+        <span class="action">Every file for an aircraft in one place, with no more hunting across folders.</span>
+        <span class="when">Available around October 2026</span>
+      </li>
+      <li>
+        <span class="action">A new aircraft in the Hub shows up in Flight Deck automatically.</span>
+        <span class="when">Available around November 2026</span>
+      </li>
+      <li>
+        <span class="action">Pull the fair market value or a video for a client from your phone.</span>
+        <span class="when">Available around December 2026</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

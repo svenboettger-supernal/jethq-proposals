@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JetHQ · CRM · Supernal SOW</title>
+<meta name="description" content="JetHQ's own CRM and the long-term replacement for Salesforce, with emails captured, deals in one pipeline, and every aircraft linked to its client.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Supernal"><img src="../assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Statement of Work for JetHQ</span>
+    </div>
+  </header>
+
+  <a class="back-link" href="../"><span class="arrow">&larr;</span> All proposals</a>
+
+  <div class="hero-grid">
+    <section class="hero">
+      <p class="kicker">CRM</p>
+      <h1>CRM</h1>
+      <p class="lede">JetHQ's own CRM and the long-term replacement for Salesforce. Every deal in one pipeline, emails captured automatically, and each aircraft linked to its client so a name in the Hub opens the client record.</p>
+    </section>
+
+    <aside class="jd-aside">
+      <button class="jd-button" type="button" data-jd-open="jd-modal">
+        <span class="jd-button-title">What you get</span>
+        <span class="jd-button-foot">
+          <span>Four outcomes you can expect</span>
+          <span class="jd-button-arrow">&rarr;</span>
+        </span>
+      </button>
+    </aside>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">01 / Overview</p>
+      <div class="section-body">
+        <h2>The brief</h2>
+        <p>This is the larger effort in the plan and the one that moves JetHQ off Salesforce over time. Today the team pays for Salesforce, pays for add-ons to make it fit, and spends engineering and RevOps time bandaging it. On the entry Salesforce tier, the built-in AI captures only the primary account holder's emails and no text messages, so a deal worked by two reps loses half its history. A native CRM inside Flight Deck captures emails across everyone on a deal, holds deals in one pipeline, and links each aircraft to its client.</p>
+        <p>It is the third circle of the Venn: the CRM, the Hub, and the aircraft data source all meet inside Flight Deck. Sales adoption is the KPI that unlocks real return, and a CRM that lives inside the platform the team already opens removes the friction of a separate login. This is a considered direction. Supernal partners with RevOps to get there, and the near-term Salesforce work continues in parallel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">02 / Objectives</p>
+      <div class="section-body">
+        <h2>What success looks like</h2>
+        <ul>
+          <li>One pipeline for every deal, from lead to close.</li>
+          <li>Automatic email capture across every rep on a deal, not just the primary contact.</li>
+          <li>Each aircraft linked to its client, so a name in the Hub opens the client record and an aircraft opens its owner.</li>
+          <li>The CRM as the source of truth for deals, wired into Flight Deck and the Hub.</li>
+          <li>The manual Salesforce effort and the stack of add-on subscriptions removed over time.</li>
+          <li>A surface the sales team actually adopts because it is where they already work.</li>
+          <li>A clean migration path from Salesforce that keeps history.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">03 / Scope</p>
+      <div class="section-body">
+        <h2>Scope of work</h2>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 1 &middot; Around Jan to Feb 2027</p>
+          <h3>The data model and the first records</h3>
+          <p class="phase-job">Contacts, deals, and aircraft-to-client links land, and new web-form leads flow straight in.</p>
+          <ul>
+            <li>The contacts and deals model, built for how JetHQ actually works a deal.</li>
+            <li>Aircraft-to-client linking, so each aircraft resolves to its client and back.</li>
+            <li>Capture of inbound web-form leads directly into the CRM.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 2 &middot; Around Feb to Mar 2027</p>
+          <h3>Email capture and the working pipeline</h3>
+          <p class="phase-job">The whole deal team's email is logged automatically and deals move through visible stages.</p>
+          <ul>
+            <li>Automatic email capture and logging across the whole deal team, not just the primary contact.</li>
+            <li>Pipeline stages that reflect how a JetHQ deal progresses.</li>
+            <li>Deal and aircraft views that cross-reference, so one opens the other.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 3 &middot; Around Mar to Apr 2027</p>
+          <h3>The transition off Salesforce</h3>
+          <p class="phase-job">The CRM becomes the source of truth for deals and the add-ons come off the bill, history intact.</p>
+          <ul>
+            <li>Migrate off Salesforce as the source of truth, on a schedule that keeps the team working throughout.</li>
+            <li>Retire the add-on subscriptions once the CRM carries the load.</li>
+            <li>Optional text-message capture, if JetHQ wants messages logged alongside email.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">04 / Out of scope</p>
+      <div class="section-body">
+        <h2>Out of scope</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-item">Replacing the aircraft data source. It stays as a feed into the CRM.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Autonomous or cold outbound.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Forecasting and quota dashboards in this phase.</td><td class="col-meta">Not in scope</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">05 / Timeline</p>
+      <div class="section-body">
+        <h2>CRM across three stages</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Around Jan to Feb 2027</td><td>Contacts and deals modeled, aircraft linked to clients, and web-form leads captured.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Around Feb to Mar 2027</td><td>Email captured across the whole deal team, with pipeline stages and cross-referenced views.</td></tr>
+              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Around Mar to Apr 2027</td><td>Salesforce retired as the source of truth over time, add-ons removed, history intact.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">06 / Required inputs</p>
+      <div class="section-body">
+        <h2>What JetHQ provides</h2>
+        <p>A short set of inputs and one leadership call keep this on track, confirmed at the standing Wednesday review as the work moves through each stage.</p>
+        <ul>
+          <li>A Salesforce export and the current pipeline definition.</li>
+          <li>Email integration access for the deal teams.</li>
+          <li>The lead web-form endpoints.</li>
+          <li>A leadership decision to retire Salesforce as the source of truth over time.</li>
+          <li>Partnership with RevOps so the transition is coordinated, not disruptive.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">Sizing</p>
+      <div class="section-body">
+        <h2>Effort</h2>
+        <div class="pricing-card">
+          <p class="pricing-amount">Large <span class="pricing-amount-meta">/ Phase 2</span></p>
+        </div>
+        <p>Sized on the JetHQ roadmap scale (small is 1 point, medium is 2, large is 4) and built inside the monthly point-based plan. Final sizing is confirmed in the internal engineering review before it is locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<div class="jd-modal" id="jd-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jd-modal-title">
+  <div class="jd-modal-backdrop" data-jd-close></div>
+  <div class="jd-modal-content">
+    <button class="jd-modal-close" type="button" aria-label="Close" data-jd-close>&times;</button>
+    <h2 id="jd-modal-title">CRM &middot; What you get</h2>
+    <p class="jd-modal-subtitle">Four outcomes from CRM.</p>
+    <ol class="jd-modal-list">
+      <li>
+        <span class="action">Every deal in one pipeline, inside the platform the team already opens.</span>
+        <span class="when">Available around February 2027</span>
+      </li>
+      <li>
+        <span class="action">Emails captured across everyone on a deal, not just the primary contact.</span>
+        <span class="when">Available around March 2027</span>
+      </li>
+      <li>
+        <span class="action">A name in the Hub opens the client record, and an aircraft opens its owner.</span>
+        <span class="when">Available around March 2027</span>
+      </li>
+      <li>
+        <span class="action">Salesforce and its add-ons retired over time, with history intact.</span>
+        <span class="when">Available around April 2027</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>
