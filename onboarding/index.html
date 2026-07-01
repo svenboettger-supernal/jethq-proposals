@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JetHQ · Onboarding · Supernal SOW</title>
+<meta name="description" content="The onboarding and biz-ops flows currently stuck in Monday, rebuilt where the team will actually use them.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Supernal"><img src="../assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Statement of Work for JetHQ</span>
+    </div>
+  </header>
+
+  <a class="back-link" href="../"><span class="arrow">&larr;</span> All proposals</a>
+
+  <div class="hero-grid">
+    <section class="hero">
+      <p class="kicker">Workspace &middot; 05</p>
+      <h1>Onboarding</h1>
+      <p class="lede">The onboarding and general biz-ops flows that live in Monday today, rebuilt inside Flight Deck where the team will actually use them. Nobody likes Monday, so this is a low-effort, high-value early win.</p>
+    </section>
+
+    <aside class="jd-aside">
+      <button class="jd-button" type="button" data-jd-open="jd-modal">
+        <span class="jd-button-title">What you get</span>
+        <span class="jd-button-foot">
+          <span>Four outcomes you can expect</span>
+          <span class="jd-button-arrow">&rarr;</span>
+        </span>
+      </button>
+    </aside>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">01 / Overview</p>
+      <div class="section-body">
+        <h2>The brief</h2>
+        <p>Onboarding and a set of general biz-ops flows run in Monday today, and the team does not like or use Monday. The goal is to bring those flows into Flight Deck: a clean onboarding checklist and the recurring operational flows the team runs, in the platform they already open.</p>
+        <p>It is kept light on purpose. This is the everyday flows the team needs, not a heavy project-management system.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">02 / Objectives</p>
+      <div class="section-body">
+        <h2>What success looks like</h2>
+        <ul>
+          <li>A clear onboarding flow for new hires, so every start follows the same path.</li>
+          <li>The general biz-ops flows migrated out of Monday and into Flight Deck.</li>
+          <li>Tasks carry an owner and a due date, so nothing sits unassigned.</li>
+          <li>A checklist that runs itself, with steps that trigger in order.</li>
+          <li>Pairs with the People Hub, so onboarding and the team directory stay in step.</li>
+          <li>A named operator owns the flows and keeps them current.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">03 / Scope</p>
+      <div class="section-body">
+        <h2>Scope of work</h2>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 1 &middot; Phase 2</p>
+          <h3>The onboarding checklist</h3>
+          <p class="phase-job">Stand up a clean onboarding flow for new hires that the team runs from day one.</p>
+          <ul>
+            <li>The onboarding checklist for new hires, built inside Flight Deck.</li>
+            <li>Every step carries an owner and a due date.</li>
+            <li>One clear path so each new start looks the same.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 2 &middot; Phase 2</p>
+          <h3>Biz-ops flows out of Monday</h3>
+          <p class="phase-job">Move the recurring operational flows the team runs from Monday into Flight Deck.</p>
+          <ul>
+            <li>The general biz-ops flows migrated from Monday.</li>
+            <li>The recurring flows the team runs, rebuilt on the surface they already open.</li>
+            <li>Owners and due dates carried across on every flow.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 3 &middot; Phase 2</p>
+          <h3>Automation and People Hub links</h3>
+          <p class="phase-job">Make the flows run themselves so steps trigger in order and nothing is missed.</p>
+          <ul>
+            <li>Automation so steps trigger as work moves through the flow.</li>
+            <li>Checks so nothing is missed along the way.</li>
+            <li>Links to the People Hub so onboarding and the directory stay in step.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">04 / Out of scope</p>
+      <div class="section-body">
+        <h2>Out of scope</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-item">Full multi-level project management. This is kept light on purpose.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Payroll and HR systems of record.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Performance management.</td><td class="col-meta">Not in scope</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">05 / Timeline</p>
+      <div class="section-body">
+        <h2>Onboarding across three stages</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Phase 2</td><td>The onboarding checklist for new hires goes live inside Flight Deck, with owners and due dates on every step.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Phase 2</td><td>The general biz-ops flows move out of Monday and into Flight Deck, carrying owners and due dates across.</td></tr>
+              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Phase 2</td><td>Automation lands so steps trigger in order and nothing is missed, with links to the People Hub.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">06 / Required inputs</p>
+      <div class="section-body">
+        <h2>What JetHQ provides</h2>
+        <p>A short list of inputs keeps the build moving. Supernal confirms scope and flow choices with JetHQ before each stage locks.</p>
+        <ul>
+          <li>The current Monday boards and flows.</li>
+          <li>The onboarding checklist as the team runs it today.</li>
+          <li>A named operator to own the flows and keep them current.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">Sizing</p>
+      <div class="section-body">
+        <h2>Effort</h2>
+        <div class="pricing-card">
+          <p class="pricing-amount">Medium <span class="pricing-amount-meta">/ Phase 2</span></p>
+        </div>
+        <p>Sized on the JetHQ roadmap scale (small is 1 point, medium is 2, large is 4) and built inside the monthly point-based plan. Final sizing is confirmed in the internal engineering review before it is locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<div class="jd-modal" id="jd-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jd-modal-title">
+  <div class="jd-modal-backdrop" data-jd-close></div>
+  <div class="jd-modal-content">
+    <button class="jd-modal-close" type="button" aria-label="Close" data-jd-close>&times;</button>
+    <h2 id="jd-modal-title">Onboarding &middot; What you get</h2>
+    <p class="jd-modal-subtitle">Four outcomes from Onboarding.</p>
+    <ol class="jd-modal-list">
+      <li>
+        <span class="action">A new hire follows one clear onboarding flow, the same path every time.</span>
+        <span class="when">In Phase 2</span>
+      </li>
+      <li>
+        <span class="action">The biz-ops flows move out of Monday and into Flight Deck, where the team already works.</span>
+        <span class="when">In Phase 2</span>
+      </li>
+      <li>
+        <span class="action">Every task carries an owner and a due date, so nothing sits unassigned.</span>
+        <span class="when">In Phase 2</span>
+      </li>
+      <li>
+        <span class="action">Steps trigger in order so nothing is missed.</span>
+        <span class="when">In Phase 2</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

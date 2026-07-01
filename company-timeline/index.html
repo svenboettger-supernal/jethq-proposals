@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JetHQ · Company Timeline · Supernal SOW</title>
+<meta name="description" content="A live feed of what is happening across the company, from new listings to closed deals.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Supernal"><img src="../assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Statement of Work for JetHQ</span>
+    </div>
+  </header>
+
+  <a class="back-link" href="../"><span class="arrow">&larr;</span> All proposals</a>
+
+  <div class="hero-grid">
+    <section class="hero">
+      <p class="kicker">Workspace &middot; 11</p>
+      <h1>Company Timeline</h1>
+      <p class="lede">A live feed of what is happening across the company. New listings, closed deals, and other milestones, so the team shares a sense of momentum.</p>
+    </section>
+
+    <aside class="jd-aside">
+      <button class="jd-button" type="button" data-jd-open="jd-modal">
+        <span class="jd-button-title">What you get</span>
+        <span class="jd-button-foot">
+          <span>Four outcomes you can expect</span>
+          <span class="jd-button-arrow">&rarr;</span>
+        </span>
+      </button>
+    </aside>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">01 / Overview</p>
+      <div class="section-body">
+        <h2>The brief</h2>
+        <p>Company Timeline is a live activity feed across Flight Deck. As listings go live, deals close, and milestones happen, they appear here, giving the whole team a shared, current picture without anyone assembling it.</p>
+        <p>It draws from the surfaces already in Flight Deck, mainly the Hub and Sales Ops, so it stays accurate with no extra work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">02 / Objectives</p>
+      <div class="section-body">
+        <h2>What success looks like</h2>
+        <ul>
+          <li>A live activity feed runs across the company, current at a glance.</li>
+          <li>New listings and closed deals surface automatically as they happen.</li>
+          <li>Milestones across the business are visible in one place.</li>
+          <li>The team shares a sense of momentum from what the feed shows.</li>
+          <li>Low effort and high visibility, with nothing to maintain by hand.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">03 / Scope</p>
+      <div class="section-body">
+        <h2>Scope of work</h2>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 1 &middot; Phase 5</p>
+          <h3>The live feed with core events</h3>
+          <p class="phase-job">Stand up the feed and get the core events flowing, new listings and closed deals.</p>
+          <ul>
+            <li>Build the live activity feed surface inside Flight Deck.</li>
+            <li>Surface new listings automatically as they go live.</li>
+            <li>Surface closed deals automatically as they close.</li>
+            <li>Draw from the Hub and Sales Ops so the feed stays accurate.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 2 &middot; Phase 5</p>
+          <h3>More event types and filtering</h3>
+          <p class="phase-job">Broaden what the feed shows and let the team focus it.</p>
+          <ul>
+            <li>Add more event types beyond listings and closed deals.</li>
+            <li>Surface additional milestones across the company.</li>
+            <li>Add simple filtering so each person can narrow the feed.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">04 / Out of scope</p>
+      <div class="section-body">
+        <h2>Out of scope</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-item">Analytics and reporting. This is a feed, not a dashboard.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Social features such as comments and reactions.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Notifications outside the platform.</td><td class="col-meta">Not in scope</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">05 / Timeline</p>
+      <div class="section-body">
+        <h2>Company Timeline across two stages</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Phase 5</td><td>The live feed goes live with the core events, new listings and closed deals surfaced automatically from the Hub and Sales Ops.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Phase 5</td><td>More event types and milestones join the feed, and simple filtering lets each person narrow it.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">06 / Required inputs</p>
+      <div class="section-body">
+        <h2>What JetHQ provides</h2>
+        <p>A short list of inputs keeps the build moving. Supernal confirms scope choices with JetHQ before each stage locks.</p>
+        <ul>
+          <li>The events that should appear in the feed.</li>
+          <li>The sources to draw from, the Hub and Sales Ops.</li>
+          <li>A named operator to own the feed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">Sizing</p>
+      <div class="section-body">
+        <h2>Effort</h2>
+        <div class="pricing-card">
+          <p class="pricing-amount">Small <span class="pricing-amount-meta">/ Phase 5</span></p>
+        </div>
+        <p>Sized on the JetHQ roadmap scale (small is 1 point, medium is 2, large is 4) and built inside the monthly point-based plan. Final sizing is confirmed in the internal engineering review before it is locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<div class="jd-modal" id="jd-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jd-modal-title">
+  <div class="jd-modal-backdrop" data-jd-close></div>
+  <div class="jd-modal-content">
+    <button class="jd-modal-close" type="button" aria-label="Close" data-jd-close>&times;</button>
+    <h2 id="jd-modal-title">Company Timeline &middot; What you get</h2>
+    <p class="jd-modal-subtitle">Four outcomes from Company Timeline.</p>
+    <ol class="jd-modal-list">
+      <li>
+        <span class="action">A live feed of what is happening across the company.</span>
+        <span class="when">In Phase 5</span>
+      </li>
+      <li>
+        <span class="action">New listings and closed deals surfaced automatically.</span>
+        <span class="when">In Phase 5</span>
+      </li>
+      <li>
+        <span class="action">A shared sense of momentum for the team.</span>
+        <span class="when">In Phase 5</span>
+      </li>
+      <li>
+        <span class="action">Nobody has to assemble it by hand.</span>
+        <span class="when">In Phase 5</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>

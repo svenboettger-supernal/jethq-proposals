@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{if(localStorage.getItem("supernal_jethq_unlocked")==="1"){document.documentElement.classList.add("unlocked");}else{document.documentElement.classList.add("locked");}}catch(e){document.documentElement.classList.add("locked");}})();</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JetHQ · Sales Ops · Supernal SOW</title>
+<meta name="description" content="The Yearly Results made real-time, Salesforce connected by API and visualized inside Flight Deck.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="proposal-gate" id="proposal-gate" role="dialog" aria-modal="true" aria-labelledby="proposal-gate-title">
+  <div class="proposal-gate-card">
+    <div class="proposal-gate-logo" role="img" aria-label="Supernal"></div>
+    <h1 id="proposal-gate-title" class="visually-hidden">JetHQ proposals</h1>
+    <p class="proposal-gate-subtitle">Enter the password to view.</p>
+    <form id="proposal-gate-form" class="proposal-gate-form" autocomplete="off">
+      <label for="proposal-gate-input" class="visually-hidden">Password</label>
+      <input type="password" id="proposal-gate-input" placeholder="Password" autocomplete="off" required>
+      <button type="submit" class="proposal-gate-button">Unlock</button>
+    </form>
+    <p id="proposal-gate-error" class="proposal-gate-error" hidden>Incorrect password.</p>
+  </div>
+</div>
+
+<div class="container">
+  <header class="masthead">
+    <a class="brand" href="../" aria-label="Supernal"><img src="../assets/supernal-logo.svg" alt="Supernal"></a>
+    <div class="meta">
+      <span>Statement of Work for JetHQ</span>
+    </div>
+  </header>
+
+  <a class="back-link" href="../"><span class="arrow">&larr;</span> All proposals</a>
+
+  <div class="hero-grid">
+    <section class="hero">
+      <p class="kicker">Workspace &middot; 09</p>
+      <h1>Sales Ops</h1>
+      <p class="lede">The existing Yearly Results section, made real-time and connected to Salesforce. Inbound leads, pipeline, forecast, comp, leaderboards, and deal-health flags in one place, with listings sourced only from the Hub.</p>
+    </section>
+
+    <aside class="jd-aside">
+      <button class="jd-button" type="button" data-jd-open="jd-modal">
+        <span class="jd-button-title">What you get</span>
+        <span class="jd-button-foot">
+          <span>Four outcomes you can expect</span>
+          <span class="jd-button-arrow">&rarr;</span>
+        </span>
+      </button>
+    </aside>
+  </div>
+</div>
+
+<div class="container">
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">01 / Overview</p>
+      <div class="section-body">
+        <h2>The brief</h2>
+        <p>Salesforce is used the traditional way, deals, contacts, and companies. The CRM manager can grant API access, so Flight Deck pulls the data in and visualizes it, cleaner and more relevant than the raw Salesforce views.</p>
+        <p>One concern to resolve. A separate outsourced integration is being built between JetNet and Salesforce that duplicates the Hub's existing integration and creates two places where available listings appear. Flight Deck keeps listings in the Hub only, so there is a single source. Sales Ops visualizes the sales picture, it does not become a second listings database. Whether Salesforce is retired later is a separate, future decision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">02 / Objectives</p>
+      <div class="section-body">
+        <h2>What success looks like</h2>
+        <ul>
+          <li>Real-time results replace the static Yearly Results, so the sales picture is current the moment it is opened.</li>
+          <li>Inbound leads are tracked with source attribution and a running log of every touch.</li>
+          <li>Pipeline is pulled from Salesforce by API and visualized cleaner than the raw CRM views.</li>
+          <li>Deal-health flags surface deals that are stalling or at risk before they slip.</li>
+          <li>Comp and leaderboards keep performance visible against goal.</li>
+          <li>Forecast rolls up from the live pipeline instead of a manual spreadsheet.</li>
+          <li>Listings are referenced from the Hub only and never duplicated inside Sales Ops.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">03 / Scope</p>
+      <div class="section-body">
+        <h2>Scope of work</h2>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 1 &middot; Phase 4</p>
+          <h3>Salesforce connection and real-time results</h3>
+          <p class="phase-job">Connect the CRM and replace the static Yearly Results with a live dashboard.</p>
+          <ul>
+            <li>Connect Salesforce by API with access granted by the CRM manager.</li>
+            <li>Pull deals, contacts, and companies into Flight Deck.</li>
+            <li>Stand up the real-time results dashboard that replaces Yearly Results.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 2 &middot; Phase 4</p>
+          <h3>Inbound leads and pipeline</h3>
+          <p class="phase-job">Capture every inbound lead and make the pipeline health readable at a glance.</p>
+          <ul>
+            <li>Inbound lead tracking with source attribution and a running touch log.</li>
+            <li>Pipeline view built from the Salesforce data.</li>
+            <li>Deal-health flags for deals that are stalling or at risk.</li>
+          </ul>
+        </div>
+
+        <div class="phase-group">
+          <p class="phase-label">Stage 3 &middot; Phase 4</p>
+          <h3>Comp, forecast, and single-source listings</h3>
+          <p class="phase-job">Round out the performance views and settle listings to a single source.</p>
+          <ul>
+            <li>Comp and leaderboards against goal.</li>
+            <li>Forecast rolled up from the live pipeline.</li>
+            <li>Resolve the listing duplication so the Hub is the only source.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">04 / Out of scope</p>
+      <div class="section-body">
+        <h2>Out of scope</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-item">A second listings database inside Sales Ops. Listings stay in the Hub.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Replacing Salesforce as the system of record in this phase. That is a future decision.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Autonomous or cold outbound.</td><td class="col-meta">Not in scope</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">05 / Timeline</p>
+      <div class="section-body">
+        <h2>Sales Ops across three stages</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Phase 4</td><td>Salesforce is connected by API, deals, contacts, and companies flow in, and the real-time results dashboard replaces Yearly Results.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Phase 4</td><td>Inbound leads are tracked with source attribution and a touch log, and the pipeline view carries deal-health flags.</td></tr>
+              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Phase 4</td><td>Comp, leaderboards, and forecast land, and the listing duplication is resolved so the Hub is the only source.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">06 / Required inputs</p>
+      <div class="section-body">
+        <h2>What JetHQ provides</h2>
+        <p>A short list of inputs and sign-offs keeps the build moving. Supernal confirms scope and layout choices with JetHQ before each stage locks.</p>
+        <ul>
+          <li>Salesforce API access, granted by the CRM manager.</li>
+          <li>The current pipeline, deal, and comp definitions.</li>
+          <li>Confirmation to stop the duplicative JetNet-to-Salesforce integration.</li>
+          <li>The KPIs leadership wants in real time.</li>
+          <li>A named operator to own the surface.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="section-grid">
+      <p class="section-label">Sizing</p>
+      <div class="section-body">
+        <h2>Effort</h2>
+        <div class="pricing-card">
+          <p class="pricing-amount">Large <span class="pricing-amount-meta">/ Phase 4</span></p>
+        </div>
+        <p>Sized on the JetHQ roadmap scale (small is 1 point, medium is 2, large is 4) and built inside the monthly point-based plan. Final sizing is confirmed in the internal engineering review before it is locked.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <span>Supernal AI</span>
+  </footer>
+
+</div>
+
+<div class="jd-modal" id="jd-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="jd-modal-title">
+  <div class="jd-modal-backdrop" data-jd-close></div>
+  <div class="jd-modal-content">
+    <button class="jd-modal-close" type="button" aria-label="Close" data-jd-close>&times;</button>
+    <h2 id="jd-modal-title">Sales Ops &middot; What you get</h2>
+    <p class="jd-modal-subtitle">Four outcomes from Sales Ops.</p>
+    <ol class="jd-modal-list">
+      <li>
+        <span class="action">The Yearly Results live and real-time, not a static page.</span>
+        <span class="when">In Phase 4</span>
+      </li>
+      <li>
+        <span class="action">Every inbound lead captured with its source and a running touch log.</span>
+        <span class="when">In Phase 4</span>
+      </li>
+      <li>
+        <span class="action">Pipeline, comp, and leaderboards visualized cleaner than raw Salesforce.</span>
+        <span class="when">In Phase 4</span>
+      </li>
+      <li>
+        <span class="action">One source for listings, the Hub, with the duplicative integration retired.</span>
+        <span class="when">In Phase 4</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<script src="../app.js" defer></script>
+
+</body>
+</html>
