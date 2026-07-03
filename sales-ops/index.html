@@ -61,6 +61,7 @@
       <div class="section-body">
         <h2>The brief</h2>
         <p>Salesforce is used the traditional way, deals, contacts, and companies. The CRM manager can grant API access, so Flight Deck pulls the data in and visualizes it, cleaner and more relevant than the raw Salesforce views.</p>
+        <p>The first step is an audit of the Salesforce instance itself. Before anything is visualized, Supernal maps the standard and custom objects and fields in use and confirms the API endpoints expose everything Flight Deck needs. Salesforce stays the system of record in this phase, so any field it shares with the Hub is matched deliberately and nothing is lost in translation.</p>
         <p>One concern to resolve. A separate outsourced integration is being built between JetNet and Salesforce that duplicates the Hub's existing integration and creates two places where available listings appear. Flight Deck keeps listings in the Hub only, so there is a single source. Sales Ops visualizes the sales picture, it does not become a second listings database. Whether Salesforce is retired later is a separate, future decision.</p>
       </div>
     </div>
@@ -93,8 +94,10 @@
         <div class="phase-group">
           <p class="phase-label">Stage 1 &middot; Q4 2026</p>
           <h3>Salesforce connection and real-time results</h3>
-          <p class="phase-job">Connect the CRM and replace the static Yearly Results with a live dashboard.</p>
+          <p class="phase-job">Audit what is inside Salesforce, connect the CRM, and replace the static Yearly Results with a live dashboard.</p>
           <ul>
+            <li>Audit the Salesforce instance first: standard and custom objects, custom fields, and confirm the API endpoints expose everything Flight Deck needs.</li>
+            <li>Match any field shared with the Hub so the two stay consistent.</li>
             <li>Connect Salesforce by API with access granted by the CRM manager.</li>
             <li>Pull deals, contacts, and companies into Flight Deck.</li>
             <li>Stand up the real-time results dashboard that replaces Yearly Results.</li>
@@ -158,7 +161,7 @@
               <tr><th>Phase</th><th>Duration</th><th>Outcome</th></tr>
             </thead>
             <tbody>
-              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Q4 2026</td><td>Salesforce is connected by API, deals, contacts, and companies flow in, and the real-time results dashboard replaces Yearly Results.</td></tr>
+              <tr><td class="col-phase">Stage 1</td><td class="col-meta">Q4 2026</td><td>The Salesforce instance is audited, it is connected by API, deals, contacts, and companies flow in, and the real-time results dashboard replaces Yearly Results.</td></tr>
               <tr><td class="col-phase">Stage 2</td><td class="col-meta">Q4 2026</td><td>Inbound leads are tracked with source attribution and a touch log, and the pipeline view carries deal-health flags.</td></tr>
               <tr><td class="col-phase">Stage 3</td><td class="col-meta">Q4 2026</td><td>Comp, leaderboards, and forecast land, and the listing duplication is resolved so the Hub is the only source.</td></tr>
             </tbody>
@@ -175,7 +178,8 @@
         <h2>What JetHQ provides</h2>
         <p>A short list of inputs and sign-offs keeps the build moving. Supernal confirms scope and layout choices with JetHQ before each stage locks.</p>
         <ul>
-          <li>Salesforce API access, granted by the CRM manager.</li>
+          <li>Salesforce API access, granted by the CRM manager, with the endpoints and objects Flight Deck needs.</li>
+          <li>A walkthrough of any custom objects and fields in Salesforce, so nothing shared with the Hub is missed.</li>
           <li>The current pipeline, deal, and comp definitions.</li>
           <li>Confirmation to stop the duplicative JetNet-to-Salesforce integration.</li>
           <li>The KPIs leadership wants in real time.</li>
