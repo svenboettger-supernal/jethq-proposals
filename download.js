@@ -64,10 +64,12 @@
 
     Promise.all([
       fetchText('styles.css'),
+      fetchText('configurator.js').catch(function () { return ''; }),
       Promise.all(PAGES.map(function (p) { return fetchText(p.url); }))
     ]).then(function (res) {
       var css = res[0];
-      var docs = res[1].map(function (h) { return parser.parseFromString(h, 'text/html'); });
+      var configuratorSrc = res[1];
+      var docs = res[2].map(function (h) { return parser.parseFromString(h, 'text/html'); });
 
       /* Map every page directory to its in-document anchor, so internal
          links become jumps within the single downloaded file. */
@@ -139,6 +141,7 @@
           '<style>\n' + css + '\n' + EXTRA_CSS + '\n</style>\n' +
           '</head>\n<body>\n' +
           articles.join('\n') +
+          (configuratorSrc ? '\n<script>\n' + configuratorSrc + '\n</script>\n' : '') +
           '\n</body>\n</html>\n';
 
         var blob = new Blob([out], { type: 'text/html;charset=utf-8' });

@@ -492,6 +492,101 @@ td.col-meta {
   gap: 12px;
 }
 
+/* ── Interactive planner ──────────────────────────── */
+.planner { margin: 72px 0; }
+
+.planner-header { margin-bottom: 32px; }
+.planner-header .section-label { margin-bottom: 12px; }
+.planner-header h2 { margin: 0 0 10px; }
+.planner-header p { margin: 0; max-width: 68ch; color: var(--fg-muted); }
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 820px) { .planner-grid { grid-template-columns: 1fr; } }
+
+.planner-options { display: flex; flex-direction: column; gap: 10px; }
+
+.planner-option {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.planner-option:hover { border-color: var(--border-strong); }
+.planner-option.is-on { border-color: var(--action); background: var(--action-subtle); }
+.planner-option input { width: 18px; height: 18px; accent-color: var(--action); cursor: pointer; margin: 0; }
+.planner-option-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.planner-option-name { font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.planner-option-blurb { font-size: 0.8125rem; color: var(--fg-muted); }
+.planner-option-meta {
+  font-size: 0.8125rem; color: var(--fg-muted);
+  font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right;
+}
+@media (max-width: 560px) {
+  .planner-option { grid-template-columns: auto 1fr; }
+  .planner-option-meta { grid-column: 2; text-align: left; }
+}
+
+.planner-badge {
+  font-size: 0.625rem; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 2px 7px; border-radius: 9999px;
+  background: var(--action); color: var(--action-fg); font-weight: 600;
+}
+
+.planner-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  position: sticky; top: 24px;
+}
+.planner-summary-label { margin: 0 0 8px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-muted); }
+.planner-summary-empty { margin: 0; color: var(--fg-muted); }
+.planner-stat { padding: 14px 0; border-bottom: 1px solid var(--border-subtle); }
+.planner-stat:last-of-type { border-bottom: none; }
+.planner-stat-num { display: block; font-family: 'Lora', Georgia, serif; font-size: 1.75rem; line-height: 1.1; color: var(--fg); }
+.planner-stat-unit { font-size: 1rem; color: var(--fg-muted); }
+.planner-stat-cap { display: block; font-size: 0.8125rem; color: var(--fg-muted); margin-top: 4px; }
+.planner-flag { margin: 14px 0 0; font-size: 0.8125rem; color: var(--fg); background: var(--bg-muted); border-radius: 8px; padding: 10px 12px; }
+
+.planner-timeline-wrap { margin-top: 32px; }
+.planner-timeline-title { margin: 0 0 16px; font-size: 0.95rem; }
+.planner-timeline-empty { color: var(--fg-muted); margin: 0; }
+
+.planner-axis { position: relative; height: 18px; margin-left: 200px; margin-bottom: 8px; }
+.planner-tick { position: absolute; transform: translateX(-50%); font-size: 0.6875rem; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
+.planner-tick:first-child { transform: none; }
+.planner-axis-unit { position: absolute; right: 0; top: 0; font-size: 0.6875rem; color: var(--fg-placeholder); }
+.planner-trow { display: grid; grid-template-columns: 200px 1fr; align-items: center; padding: 5px 0; }
+.planner-trow-name { font-size: 0.8125rem; padding-right: 14px; }
+.planner-track { position: relative; height: 26px; background: var(--bg-muted); border-radius: 6px; }
+.planner-bar {
+  position: absolute; top: 0; height: 26px; min-width: 3px;
+  background: var(--action); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--action-fg); font-size: 0.6875rem; font-weight: 600; overflow: hidden;
+}
+.planner-bar--tbd {
+  width: auto; padding: 0 10px; color: var(--fg-muted);
+  border: 1px dashed var(--border-strong);
+  background: repeating-linear-gradient(45deg, var(--bg-card-hover), var(--bg-card-hover) 5px, var(--bg-muted) 5px, var(--bg-muted) 10px);
+}
+.planner-bar-label { pointer-events: none; }
+@media (max-width: 560px) {
+  .planner-axis { margin-left: 120px; }
+  .planner-trow { grid-template-columns: 120px 1fr; }
+}
+
 /* ── Download CTA ─────────────────────────────────── */
 .download-cta {
   margin: 72px 0 8px;
