@@ -524,6 +524,8 @@ td.col-meta {
 }
 .planner-option:hover { border-color: var(--border-strong); }
 .planner-option.is-on { border-color: var(--action); background: var(--action-subtle); }
+.planner-option.is-locked { cursor: default; }
+.planner-option.is-locked input { cursor: not-allowed; opacity: 0.85; }
 .planner-option input { width: 18px; height: 18px; accent-color: var(--action); cursor: pointer; margin: 0; }
 .planner-option-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .planner-option-name { font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }

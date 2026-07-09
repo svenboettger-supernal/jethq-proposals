@@ -75,27 +75,24 @@
       else if (sched.finish[p.id] > totalWeeks) totalWeeks = sched.finish[p.id];
     });
 
-    /* Foundation nudge: something selected that leans on Core & Home
-       while Core & Home itself is switched off. */
-    var missingFoundation = !selected['core-home'] &&
-      sel.some(function (p) { return p.deps.indexOf('core-home') > -1; });
-
     renderOptions();
-    renderSummary(sel, totalPrice, hasTbdPrice, totalWeeks, hasTbdWeeks, missingFoundation);
+    renderSummary(sel, totalPrice, hasTbdPrice, totalWeeks, hasTbdWeeks);
     renderTimeline(sel, sched, totalWeeks, hasTbdWeeks);
   }
 
   function renderOptions() {
     elOptions.innerHTML = PACKAGES.map(function (p) {
       var on = selected[p.id];
+      var locked = !!p.foundation;
       var meta = (p.weeks == null ? 'Timing TBD' : p.weeks + ' weeks') + ' &middot; ' +
                  (p.price == null ? 'Pricing TBD' : fmtMoney(p.price) + '/mo');
       return '' +
-        '<label class="planner-option' + (on ? ' is-on' : '') + '">' +
-          '<input type="checkbox" data-pkg="' + p.id + '"' + (on ? ' checked' : '') + '>' +
+        '<label class="planner-option' + (on ? ' is-on' : '') + (locked ? ' is-locked' : '') + '"' +
+          (locked ? ' title="Core &amp; Home is the foundation, always included"' : '') + '>' +
+          '<input type="checkbox" data-pkg="' + p.id + '"' + (on ? ' checked' : '') + (locked ? ' disabled' : '') + '>' +
           '<span class="planner-option-body">' +
             '<span class="planner-option-name">' + p.name +
-              (p.foundation ? '<span class="planner-badge">Foundation</span>' : '') +
+              (locked ? '<span class="planner-badge">Foundation &middot; required</span>' : '') +
             '</span>' +
             '<span class="planner-option-blurb">' + p.blurb + '</span>' +
           '</span>' +
@@ -104,7 +101,7 @@
     }).join('');
   }
 
-  function renderSummary(sel, totalPrice, hasTbdPrice, totalWeeks, hasTbdWeeks, missingFoundation) {
+  function renderSummary(sel, totalPrice, hasTbdPrice, totalWeeks, hasTbdWeeks) {
     if (!sel.length) {
       elSummary.innerHTML =
         '<p class="planner-summary-empty">Choose the packages JetHQ wants and the plan builds itself here.</p>';
@@ -115,10 +112,6 @@
     var timeNote = hasTbdWeeks ? 'plus Admin &amp; Finance, timing set with Johnny' : 'delivered end to end';
     var priceVal = totalPrice > 0 ? fmtMoney(totalPrice) : 'TBD';
     var priceNote = hasTbdPrice ? 'plus Admin &amp; Finance, priced with Johnny' : 'on the point-based plan';
-
-    var foundationNote = missingFoundation
-      ? '<p class="planner-flag">Core &amp; Home is the foundation the rest sits on. It is worth turning on first.</p>'
-      : '';
 
     elSummary.innerHTML = '' +
       '<p class="planner-summary-label">Your plan</p>' +
@@ -133,8 +126,7 @@
       '<div class="planner-stat">' +
         '<span class="planner-stat-num">' + priceVal + (priceVal !== 'TBD' ? '<span class="planner-stat-unit">/mo</span>' : '') + '</span>' +
         '<span class="planner-stat-cap">' + priceNote + '</span>' +
-      '</div>' +
-      foundationNote;
+      '</div>';
   }
 
   function renderTimeline(sel, sched, totalWeeks, hasTbdWeeks) {
@@ -182,7 +174,9 @@
   function onChange(e) {
     var cb = e.target.closest ? e.target.closest('input[data-pkg]') : null;
     if (!cb) return;
-    selected[cb.getAttribute('data-pkg')] = cb.checked;
+    var id = cb.getAttribute('data-pkg');
+    if (byId[id] && byId[id].foundation) { cb.checked = true; return; } // Core & Home is required
+    selected[id] = cb.checked;
     render();
   }
 
