@@ -111,7 +111,7 @@
     var timeVal = totalWeeks > 0 ? '~' + totalWeeks + ' weeks' : 'TBD';
     var timeNote = 'time to deliver';
     var priceVal = totalPrice > 0 ? fmtMoney(totalPrice) : 'TBD';
-    var priceNote = hasTbdPrice ? 'plus Admin &amp; Finance' : 'on the point-based plan';
+    var priceNote = hasTbdPrice ? 'plus Admin &amp; Finance' : '';
 
     elSummary.innerHTML = '' +
       '<p class="planner-summary-label">Your plan</p>' +
@@ -125,7 +125,7 @@
       '</div>' +
       '<div class="planner-stat">' +
         '<span class="planner-stat-num">' + priceVal + (priceVal !== 'TBD' ? '<span class="planner-stat-unit">/mo</span>' : '') + '</span>' +
-        '<span class="planner-stat-cap">' + priceNote + '</span>' +
+        (priceNote ? '<span class="planner-stat-cap">' + priceNote + '</span>' : '') +
       '</div>';
   }
 
