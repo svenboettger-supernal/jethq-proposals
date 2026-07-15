@@ -1264,7 +1264,7 @@ html.locked .proposal-gate {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 56px;
   align-items: end;
   padding-top: 96px;
