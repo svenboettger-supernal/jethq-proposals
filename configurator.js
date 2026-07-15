@@ -17,7 +17,7 @@
     { id: 'ask-jetty', name: 'Ask Jetty', href: 'ask-jethq/', weeks: 6, price: 2000, deps: ['core-home'],
       blurb: 'The pilot-persona copilot that replaces ChatGPT and Claude.' },
     { id: 'sales-ops', name: 'Sales Ops', href: 'sales-ops/', weeks: 8, price: 2500, deps: ['core-home'],
-      blurb: 'Salesforce brought into Flight Deck and visualized in real time.' },
+      blurb: 'Salesforce dashboards brought into Flight Deck and visualized in real time.' },
     { id: 'admin-finance', name: 'Admin &amp; Finance', href: 'admin-finance/', weeks: null, price: null, deps: ['core-home'],
       blurb: 'Accounts payable and receivable and the finance operations.' }
   ];
@@ -109,9 +109,9 @@
     }
 
     var timeVal = totalWeeks > 0 ? '~' + totalWeeks + ' weeks' : 'TBD';
-    var timeNote = hasTbdWeeks ? 'plus Admin &amp; Finance, timing set with Johnny' : 'delivered end to end';
+    var timeNote = 'time to deliver';
     var priceVal = totalPrice > 0 ? fmtMoney(totalPrice) : 'TBD';
-    var priceNote = hasTbdPrice ? 'plus Admin &amp; Finance, priced with Johnny' : 'on the point-based plan';
+    var priceNote = hasTbdPrice ? 'plus Admin &amp; Finance' : 'on the point-based plan';
 
     elSummary.innerHTML = '' +
       '<p class="planner-summary-label">Your plan</p>' +
@@ -121,7 +121,7 @@
       '</div>' +
       '<div class="planner-stat">' +
         '<span class="planner-stat-num">' + timeVal + '</span>' +
-        '<span class="planner-stat-cap">time to deliver, ' + timeNote + '</span>' +
+        '<span class="planner-stat-cap">' + timeNote + '</span>' +
       '</div>' +
       '<div class="planner-stat">' +
         '<span class="planner-stat-num">' + priceVal + (priceVal !== 'TBD' ? '<span class="planner-stat-unit">/mo</span>' : '') + '</span>' +
