@@ -38,7 +38,7 @@
     <section class="hero">
       <p class="kicker">Package 05</p>
       <h1>Sales Ops</h1>
-      <p class="lede">The existing Yearly Results section, made real-time and connected to Salesforce. Inbound leads, pipeline, forecast, comp, leaderboards, and deal-health flags in one place, with listings sourced only from the Hub.</p>
+      <p class="lede">Real-time dashboards connected to Salesforce. Inbound leads, pipeline, forecast, comp, leaderboards, and deal-health flags in one place, with listings sourced only from the Hub.</p>
     </section>
   </div>
 </div>
@@ -51,8 +51,7 @@
       <div class="section-body">
         <h2>The brief</h2>
         <p>Salesforce is used the traditional way, deals, contacts, and companies. The CRM manager can grant API access, so Flight Deck pulls the data in and visualizes it, cleaner and more relevant than the raw Salesforce views.</p>
-        <p>The first step is an audit of the Salesforce instance itself. Before anything is visualized, Supernal maps the standard and custom objects and fields in use and confirms the API endpoints expose everything Flight Deck needs. Salesforce stays the system of record in this phase, so any field it shares with the Hub is matched deliberately and nothing is lost in translation.</p>
-        <p>One concern to resolve. A separate outsourced integration is being built between JetNet and Salesforce that duplicates the Hub's existing integration and creates two places where available listings appear. Flight Deck keeps listings in the Hub only, so there is a single source. Sales Ops visualizes the sales picture, it does not become a second listings database. Whether Salesforce is retired later is a separate, future decision.</p>
+        <p>The first step is an audit of the Salesforce instance itself. Before anything is visualized, Supernal maps the standard and custom objects and fields in use and confirms the API endpoints expose everything Flight Deck needs. Salesforce stays the system of record in this phase, so any field it shares with the Hub is matched deliberately and nothing is lost in translation. Whether Salesforce is retired later is a separate, future decision.</p>
       </div>
     </div>
   </section>
@@ -64,12 +63,10 @@
         <h2>What success looks like</h2>
         <ul>
           <li>Real-time results replace the static Yearly Results, so the sales picture is current the moment it is opened.</li>
-          <li>Inbound leads are tracked with source attribution and a running log of every touch.</li>
           <li>Pipeline is pulled from Salesforce by API and visualized cleaner than the raw CRM views.</li>
           <li>Deal-health flags surface deals that are stalling or at risk before they slip.</li>
           <li>Comp and leaderboards keep performance visible against goal.</li>
           <li>Forecast rolls up from the live pipeline instead of a manual spreadsheet.</li>
-          <li>Listings are referenced from the Hub only and never duplicated inside Sales Ops.</li>
         </ul>
       </div>
     </div>
@@ -97,22 +94,21 @@
         <div class="phase-group">
           <p class="phase-label">Stage 2 &middot; Q4 2026</p>
           <h3>Inbound leads and pipeline</h3>
-          <p class="phase-job">Capture every inbound lead and make the pipeline health readable at a glance.</p>
+          <p class="phase-job">Surface inbound leads and pipeline from what Salesforce already holds, and make deal health readable at a glance.</p>
           <ul>
-            <li>Inbound lead tracking with source attribution and a running touch log.</li>
-            <li>Pipeline view built from the Salesforce data.</li>
-            <li>Deal-health flags for deals that are stalling or at risk.</li>
+            <li>Surface inbound leads from Salesforce, using the source and activity data the instance already captures.</li>
+            <li>Build the pipeline view from the Salesforce data.</li>
+            <li>Flag deals that are stalling or at risk, using the criteria JetHQ defines.</li>
           </ul>
         </div>
 
         <div class="phase-group">
           <p class="phase-label">Stage 3 &middot; Q4 2026</p>
-          <h3>Comp, forecast, and single-source listings</h3>
-          <p class="phase-job">Round out the performance views and settle listings to a single source.</p>
+          <h3>Comp and forecast</h3>
+          <p class="phase-job">Round out the performance views with comp, leaderboards, and forecast.</p>
           <ul>
             <li>Comp and leaderboards against goal.</li>
             <li>Forecast rolled up from the live pipeline.</li>
-            <li>Resolve the listing duplication so the Hub is the only source.</li>
           </ul>
         </div>
       </div>
@@ -130,9 +126,8 @@
               <tr><th>Item</th><th>Status</th></tr>
             </thead>
             <tbody>
-              <tr><td class="col-item">A second listings database inside Sales Ops. Listings stay in the Hub.</td><td class="col-meta">Not in scope</td></tr>
               <tr><td class="col-item">Replacing Salesforce as the system of record in this phase. That is a future decision.</td><td class="col-meta">Not in scope</td></tr>
-              <tr><td class="col-item">Autonomous or cold outbound.</td><td class="col-meta">Not in scope</td></tr>
+              <tr><td class="col-item">Active selling work such as lead research, prospecting, and outbound. That is a separate Sales Manager AI Employee.</td><td class="col-meta">Not in scope</td></tr>
             </tbody>
           </table>
         </div>
@@ -152,8 +147,8 @@
             </thead>
             <tbody>
               <tr><td class="col-phase">Stage 1</td><td class="col-meta">Q4 2026</td><td>The Salesforce instance is audited, it is connected by API, deals, contacts, and companies flow in, and the real-time results dashboard replaces Yearly Results.</td></tr>
-              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Q4 2026</td><td>Inbound leads are tracked with source attribution and a touch log, and the pipeline view carries deal-health flags.</td></tr>
-              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Q4 2026</td><td>Comp, leaderboards, and forecast land, and the listing duplication is resolved so the Hub is the only source.</td></tr>
+              <tr><td class="col-phase">Stage 2</td><td class="col-meta">Q4 2026</td><td>Inbound leads and pipeline are surfaced from Salesforce, and the pipeline view flags deals that are stalling or at risk.</td></tr>
+              <tr><td class="col-phase">Stage 3</td><td class="col-meta">Q4 2026</td><td>Comp, leaderboards, and forecast land.</td></tr>
             </tbody>
           </table>
         </div>
@@ -170,10 +165,8 @@
         <ul>
           <li>Salesforce API access, granted by the CRM manager, with the endpoints and objects Flight Deck needs.</li>
           <li>A walkthrough of any custom objects and fields in Salesforce, so nothing shared with the Hub is missed.</li>
-          <li>The current pipeline, deal, and comp definitions.</li>
-          <li>Confirmation to stop the duplicative JetNet-to-Salesforce integration.</li>
+          <li>The current pipeline, deal, and comp definitions, and how deal health is judged.</li>
           <li>The KPIs leadership wants in real time.</li>
-          <li>A named operator to own the surface.</li>
         </ul>
       </div>
     </div>
@@ -187,7 +180,6 @@
         <div class="pricing-card">
           <p class="pricing-amount">$2,500 <span class="pricing-amount-meta">/ month</span></p>
         </div>
-        <p>Billed monthly on the JetHQ point-based plan. Indicative pricing, confirmed together.</p>
       </div>
     </div>
   </section>
