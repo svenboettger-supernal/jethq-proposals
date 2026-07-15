@@ -16,10 +16,10 @@
       blurb: 'The whole company intranet rebuilt in one modern place.' },
     { id: 'ask-jetty', name: 'Ask Jetty', href: 'ask-jethq/', weeks: 6, price: 2000, deps: ['core-home'],
       blurb: 'The pilot-persona copilot that replaces ChatGPT and Claude.' },
-    { id: 'admin-finance', name: 'Admin &amp; Finance', href: 'admin-finance/', weeks: null, price: null, deps: ['core-home'],
-      blurb: 'Accounts payable and receivable and the finance operations.' },
     { id: 'sales-ops', name: 'Sales Ops', href: 'sales-ops/', weeks: 8, price: 2500, deps: ['core-home'],
-      blurb: 'Salesforce brought into Flight Deck and visualized in real time.' }
+      blurb: 'Salesforce brought into Flight Deck and visualized in real time.' },
+    { id: 'admin-finance', name: 'Admin &amp; Finance', href: 'admin-finance/', weeks: null, price: null, deps: ['core-home'],
+      blurb: 'Accounts payable and receivable and the finance operations.' }
   ];
 
   var byId = {};
